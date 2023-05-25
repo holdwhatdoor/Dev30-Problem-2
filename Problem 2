@@ -10,3 +10,29 @@ var grades = {
     Tom: [77, 61, 89, 47, 57, 83],
     Andy: [35, 54, 44, 58, 39, 41]
 }
+
+// Variable declared, instantiated as array of grades.key values, console logged as test
+var gradesKeyNames = Object.keys(grades);
+console.log(gradesKeyNames.length);
+
+/** 
+Nested for loops where outer loop iterates through keys and 
+assigns value array pairs to global variable studentTestScores.
+Inner loop
+*/
+for(i = 0; i < gradesKeyNames.length; i++){
+    let indexItem = i;
+    var nameProp = gradesKeyNames[indexItem];
+    var studentTestScores = grades[nameProp];
+ 
+    console.log(`nameProp: ${nameProp}`);
+    console.log(`Actual grades array (grades[nameProp]): ${grades[nameProp]}`);
+    console.log(`studentTestScores: ${studentTestScores}`);
+    
+    // Iterates through each individual student's array of grades
+    for(j = 0; j < studentTestScores.length; j++){
+        console.log(`studentTestScores[j]: ${studentTestScores[j]}`);
+    }
+
+
+}
