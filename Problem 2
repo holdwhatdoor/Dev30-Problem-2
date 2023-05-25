@@ -1,0 +1,12 @@
+// Problem 2: find lowest avg grades for each test.  
+// Each Key/Value pair in grades is a name/array of test scores. 
+// Find the average score of each student's array of test scores, where the 
+// index of the grades array for each student will be averaged with the corresponding 
+// index of the other students' grades arrays
+
+var grades = {
+    Ron:[90, 89, 90, 87, 100, 74],
+    Leslie: [78, 74, 92, 87, 77, 81],
+    Tom: [77, 61, 89, 47, 57, 83],
+    Andy: [35, 54, 44, 58, 39, 41]
+}
